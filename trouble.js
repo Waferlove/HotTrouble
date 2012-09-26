@@ -1,4 +1,4 @@
-function initTrouble()
+function makeBackground()
 {
     console.log('initTrouble');
 
@@ -8,6 +8,8 @@ function initTrouble()
         "#f2e921",
         "#f59119",
     ];
+    
+    $('#background').empty();
 
     for (var i = 0; i < 150; i++)
     {
@@ -15,6 +17,12 @@ function initTrouble()
         var elem='<div class="square" style="background:'+color[n]+'">&nbsp;</div>'
         $('#background').append(elem);
     }
+}
+
+function initTrouble()
+{
+    makeBackground();
+    window.setInterval(makeBackground, 1*1000);
 }
 
 $(document).ready(initTrouble);

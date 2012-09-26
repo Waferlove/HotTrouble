@@ -9,7 +9,7 @@ function initTrouble()
         "#f59119",
     ];
 
-    for (var i = 0; i < 1500; i++)
+    for (var i = 0; i < 150; i++)
     {
         var n=Math.floor(Math.random()*color.length);
         var elem='<div class="square" style="background:'+color[n]+'">&nbsp;</div>'

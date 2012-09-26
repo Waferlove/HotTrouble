@@ -1,3 +1,5 @@
+var refreshSpeed=1; // seconds
+
 function makeBackground()
 {
     console.log('initTrouble');
@@ -22,7 +24,7 @@ function makeBackground()
 function initTrouble()
 {
     makeBackground();
-    window.setInterval(makeBackground, 1*1000);
+    window.setInterval(makeBackground, refreshSpeed*1000);
 }
 
 $(document).ready(initTrouble);

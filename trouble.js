@@ -1,4 +1,4 @@
-var refreshSpeed=1; // seconds
+var refreshSpeed=0.5; // seconds
 
 function makeBackground()
 {

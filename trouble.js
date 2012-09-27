@@ -23,6 +23,8 @@ function makeBackground()
 
 function initTrouble()
 {
+    $('#slider').orbit();
+
     makeBackground();
     window.setInterval(makeBackground, refreshSpeed*1000);
 }
